@@ -1,0 +1,43 @@
+:root {
+  --mainWhite: #f5f5f5;
+  --mainBlack: #333333;
+  --mainDarkGrey: #888888;
+  --mainGrey: #e0dede;
+}
+body {
+  background: var(--mainWhite);
+  color: #333333;
+}
+.submitBtn,
+.reposBtn {
+  border-color: var(--mainGrey);
+  background: transparent;
+  color: var(--mainDarkGrey);
+}
+.submitBtn:hover {
+  background: var(--mainBlue);
+  color: var(--mainBlack);
+}
+.reposBtn:hover {
+  background: var(--mainBlue);
+  color: var(--mainBlack);
+}
+.form-control {
+  border-color: var(--mainGrey);
+}
+.form-control::placeholder {
+  font-size: 0.6rem;
+  opacity: 0.5;
+  letter-spacing: 0.05rem;
+}
+.feedback {
+  display: none;
+}
+.showItem {
+  display: block;
+}
+
+.user-repos {
+  height: 20rem;
+  overflow: scroll !important;
+}
